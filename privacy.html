@@ -4,158 +4,271 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | SpotterHQ</title>
+    <meta name="description" content="SpotterHQ privacy policy — local-first, no trackers, no ads, your data stays yours.">
+    <meta name="theme-color" content="#0a0f1e">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 2rem; color: #333; }
-        a { color: #0066cc; text-decoration: none; }
+        :root {
+            --bg: #0a0f1e;
+            --bg-card: rgba(255,255,255,0.03);
+            --border: rgba(255,255,255,0.06);
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --text-heading: #f8fafc;
+            --cyan: #38bdf8;
+            --green: #22c55e;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--cyan);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 2.5rem;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .back-link:hover { opacity: 0.8; }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: var(--text-heading);
+            margin-bottom: 0.5rem;
+        }
+        .last-updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+        .intro {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .contact-line {
+            margin-bottom: 2rem;
+        }
+        .contact-line a { color: var(--cyan); }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        ul {
+            padding-left: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+        li {
+            margin-bottom: 0.6rem;
+            color: var(--text);
+        }
+        li strong { color: var(--text-heading); }
+
+        p { margin-bottom: 1rem; }
+
+        a { color: var(--cyan); text-decoration: none; }
         a:hover { text-decoration: underline; }
-        h1, h2, h3 { color: #111; margin-top: 2rem; }
-        h1 { margin-top: 1rem; }
-        ul { margin-bottom: 1.5rem; }
-        table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom: 2rem; font-size: 0.95rem; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background-color: #f8f9fa; font-weight: bold; }
-        hr { border: 0; border-top: 1px solid #eee; margin: 2rem 0; }
-        .back-link { display: inline-block; margin-bottom: 1rem; font-size: 0.9rem; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 2rem;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.85rem 1rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg-card);
+            color: var(--text-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        td { color: var(--text); }
+        td a { word-break: break-all; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.75rem; }
+            table { font-size: 0.82rem; }
+            th, td { padding: 0.6rem; }
+        }
     </style>
 </head>
 <body>
-    <a href="index.html" class="back-link">&larr; Back to Home</a>
-    
-    <h1>Privacy Policy for SpotterHQ</h1>
-    <p><strong>Last updated: March 4, 2026</strong></p>
+    <div class="page">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
 
-    <p>SpotterHQ ("we", "our", or "the app") is a military aviation spotting application. This privacy policy explains how we collect, use, and protect your information.</p>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated"><strong>Last updated:</strong> March 4, 2026</p>
+        <p class="intro">SpotterHQ ("we", "our", or "the app") is a military aviation spotting application. This privacy policy explains how we collect, use, and protect your information.</p>
+        <p class="contact-line"><strong>Contact:</strong> <a href="mailto:contact@spotterhq.app">contact@spotterhq.app</a></p>
 
-    <p><strong>Contact:</strong> <a href="mailto:contact@spotterhq.app">contact@spotterhq.app</a></p>
+        <hr>
 
-    <hr>
+        <h2>1. Information We Collect</h2>
 
-    <h2>1. Information We Collect</h2>
+        <h3>Information You Provide</h3>
+        <ul>
+            <li><strong>Account information:</strong> If you create an account, we collect your email address and password (stored securely via Supabase Authentication).</li>
+            <li><strong>Spotting logs:</strong> Aircraft observations, photos, notes, and location data you choose to record.</li>
+            <li><strong>Gear profiles:</strong> Camera and lens configurations you save.</li>
+        </ul>
 
-    <h3>Information You Provide</h3>
-    <ul>
-        <li><strong>Account information:</strong> If you create an account, we collect your email address and password (stored securely via Supabase Authentication).</li>
-        <li><strong>Spotting logs:</strong> Aircraft observations, photos, notes, and location data you choose to record.</li>
-        <li><strong>Gear profiles:</strong> Camera and lens configurations you save.</li>
-    </ul>
+        <h3>Information Collected Automatically</h3>
+        <ul>
+            <li><strong>Device location:</strong> With your permission, we access your GPS location to show nearby aircraft and enable proximity-based features. Location data is processed on-device and is not shared with third parties.</li>
+            <li><strong>Camera access:</strong> With your permission, we access your device camera for the AR view feature. Camera data is not recorded or transmitted beyond what you explicitly save as spot photos.</li>
+        </ul>
 
-    <h3>Information Collected Automatically</h3>
-    <ul>
-        <li><strong>Device location:</strong> With your permission, we access your GPS location to show nearby aircraft and enable proximity-based features. Location data is processed on-device and is not shared with third parties.</li>
-        <li><strong>Camera access:</strong> With your permission, we access your device camera for the AR view feature. Camera data is not recorded or transmitted beyond what you explicitly save as spot photos.</li>
-    </ul>
+        <h3>Information We Do NOT Collect</h3>
+        <ul>
+            <li>We do not collect analytics, crash reports, or usage telemetry.</li>
+            <li>We do not collect advertising identifiers.</li>
+            <li>We do not track you across other apps or websites.</li>
+        </ul>
 
-    <h3>Information We Do NOT Collect</h3>
-    <ul>
-        <li>We do not collect analytics, crash reports, or usage telemetry.</li>
-        <li>We do not collect advertising identifiers.</li>
-        <li>We do not track you across other apps or websites.</li>
-    </ul>
+        <hr>
 
-    <hr>
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+            <li><strong>Display nearby aircraft:</strong> Your location is sent to api.adsb.lol to fetch aircraft within your configured radius. This API is operated by a third party (see Section 5).</li>
+            <li><strong>Cloud sync</strong> (optional): If you create an account, your spotting logs, locations, and app settings are synced to our Supabase backend so you can access them across devices.</li>
+            <li><strong>Photo backup</strong> (optional, off by default): If you enable cloud photo backup, your spot photos are uploaded to secure cloud storage.</li>
+            <li><strong>Authentication:</strong> Your email is used solely for account access and password recovery.</li>
+        </ul>
 
-    <h2>2. How We Use Your Information</h2>
-    <ul>
-        <li><strong>Display nearby aircraft:</strong> Your location is sent to api.adsb.lol to fetch aircraft within your configured radius. This API is operated by a third party (see Section 5).</li>
-        <li><strong>Cloud sync</strong> (optional): If you create an account, your spotting logs, locations, and app settings are synced to our Supabase backend so you can access them across devices.</li>
-        <li><strong>Photo backup</strong> (optional, off by default): If you enable cloud photo backup, your spot photos are uploaded to secure cloud storage.</li>
-        <li><strong>Authentication:</strong> Your email is used solely for account access and password recovery.</li>
-    </ul>
+        <hr>
 
-    <hr>
+        <h2>3. Data Storage and Security</h2>
+        <ul>
+            <li><strong>Local-first:</strong> All data is stored locally on your device in a SQLite database. The app works fully offline.</li>
+            <li><strong>Cloud sync is optional:</strong> You can use the app without creating an account. No data leaves your device unless you opt in.</li>
+            <li><strong>Sensitive data exclusion:</strong> API keys, passwords, and privacy zone home coordinates are never synced to the cloud.</li>
+            <li><strong>Privacy zone:</strong> You can configure a privacy zone around your home location. When enabled, coordinates within this zone are replaced with "PRIVATE" in CSV exports.</li>
+            <li><strong>Encryption in transit:</strong> All network communication uses HTTPS/TLS.</li>
+            <li><strong>Supabase security:</strong> Cloud data is protected by Row Level Security (RLS) policies ensuring users can only access their own data.</li>
+        </ul>
 
-    <h2>3. Data Storage and Security</h2>
-    <ul>
-        <li><strong>Local-first:</strong> All data is stored locally on your device in a SQLite database. The app works fully offline.</li>
-        <li><strong>Cloud sync is optional:</strong> You can use the app without creating an account. No data leaves your device unless you opt in.</li>
-        <li><strong>Sensitive data exclusion:</strong> API keys, passwords, and privacy zone home coordinates are never synced to the cloud.</li>
-        <li><strong>Privacy zone:</strong> You can configure a privacy zone around your home location. When enabled, coordinates within this zone are replaced with "PRIVATE" in CSV exports.</li>
-        <li><strong>Encryption in transit:</strong> All network communication uses HTTPS/TLS.</li>
-        <li><strong>Supabase security:</strong> Cloud data is protected by Row Level Security (RLS) policies ensuring users can only access their own data.</li>
-    </ul>
+        <hr>
 
-    <hr>
+        <h2>4. Data Sharing</h2>
+        <p>We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
+        <p>Your data may be transmitted to the following services solely to provide app functionality:</p>
+        <ul>
+            <li><strong>api.adsb.lol</strong> — to fetch aircraft data (your approximate location is sent as query parameters)</li>
+            <li><strong>api.glidernet.org</strong> — to fetch glider data (your approximate location is sent)</li>
+            <li><strong>CelesTrak</strong> — to fetch satellite orbital data (only if you enable satellite tracking)</li>
+            <li><strong>Supabase</strong> — to store synced data (only if you create an account)</li>
+            <li><strong>aviationweather.gov</strong> — to fetch METAR weather data</li>
+        </ul>
 
-    <h2>4. Data Sharing</h2>
-    <p>We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
-    <p>Your data may be transmitted to the following services solely to provide app functionality:</p>
-    <ul>
-        <li><strong>api.adsb.lol</strong> — to fetch aircraft data (your approximate location is sent as query parameters)</li>
-        <li><strong>api.glidernet.org</strong> — to fetch glider data (your approximate location is sent)</li>
-        <li><strong>CelesTrak</strong> — to fetch satellite orbital data (only if you enable satellite tracking)</li>
-        <li><strong>Supabase</strong> — to store synced data (only if you create an account)</li>
-        <li><strong>aviationweather.gov</strong> — to fetch METAR weather data</li>
-    </ul>
+        <hr>
 
-    <hr>
+        <h2>5. Third-Party Services</h2>
+        <p>The app relies on the following third-party services, each with their own privacy policies:</p>
 
-    <h2>5. Third-Party Services</h2>
-    <p>The app relies on the following third-party services, each with their own privacy policies:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Purpose</th>
+                    <th>Privacy Policy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>api.adsb.lol</td>
+                    <td>Aircraft tracking data</td>
+                    <td><a href="https://adsb.lol/privacy/" target="_blank" rel="noopener">adsb.lol/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Supabase</td>
+                    <td>Authentication &amp; cloud sync</td>
+                    <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Open Glider Network</td>
+                    <td>Glider tracking data</td>
+                    <td><a href="https://www.glidernet.org" target="_blank" rel="noopener">glidernet.org</a></td>
+                </tr>
+                <tr>
+                    <td>CelesTrak</td>
+                    <td>Satellite TLE data</td>
+                    <td><a href="https://celestrak.org" target="_blank" rel="noopener">celestrak.org</a></td>
+                </tr>
+                <tr>
+                    <td>OpenStreetMap</td>
+                    <td>Map tiles</td>
+                    <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OSM Privacy Policy</a></td>
+                </tr>
+            </tbody>
+        </table>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Service</th>
-                <th>Purpose</th>
-                <th>Privacy Policy</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>api.adsb.lol</td>
-                <td>Aircraft tracking data</td>
-                <td><a href="https://adsb.lol/privacy/" target="_blank">https://adsb.lol/privacy/</a></td>
-            </tr>
-            <tr>
-                <td>Supabase</td>
-                <td>Authentication & cloud sync</td>
-                <td><a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></td>
-            </tr>
-            <tr>
-                <td>Open Glider Network</td>
-                <td>Glider tracking data</td>
-                <td><a href="https://www.glidernet.org" target="_blank">https://www.glidernet.org</a></td>
-            </tr>
-            <tr>
-                <td>CelesTrak</td>
-                <td>Satellite TLE data</td>
-                <td><a href="https://celestrak.org" target="_blank">https://celestrak.org</a></td>
-            </tr>
-            <tr>
-                <td>OpenStreetMap</td>
-                <td>Map tiles</td>
-                <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></td>
-            </tr>
-        </tbody>
-    </table>
+        <hr>
 
-    <hr>
+        <h2>6. Your Rights and Choices</h2>
+        <ul>
+            <li><strong>Location permission:</strong> You can revoke location access at any time in your device settings. The app will still function but cannot show nearby aircraft.</li>
+            <li><strong>Account deletion:</strong> You can delete your account and all associated cloud data by contacting us at <a href="mailto:contact@spotterhq.app">contact@spotterhq.app</a>.</li>
+            <li><strong>Local data deletion:</strong> Uninstalling the app removes all locally stored data.</li>
+            <li><strong>Export your data:</strong> You can export your spotting logs as CSV files from within the app.</li>
+            <li><strong>Cloud sync:</strong> You can disable cloud sync at any time by signing out.</li>
+            <li><strong>Photo backup:</strong> Cloud photo backup is off by default and can be toggled in settings.</li>
+        </ul>
 
-    <h2>6. Your Rights and Choices</h2>
-    <ul>
-        <li><strong>Location permission:</strong> You can revoke location access at any time in your device settings. The app will still function but cannot show nearby aircraft.</li>
-        <li><strong>Account deletion:</strong> You can delete your account and all associated cloud data by contacting us at <a href="mailto:contact@spotterhq.app">contact@spotterhq.app</a>.</li>
-        <li><strong>Local data deletion:</strong> Uninstalling the app removes all locally stored data.</li>
-        <li><strong>Export your data:</strong> You can export your spotting logs as CSV files from within the app.</li>
-        <li><strong>Cloud sync:</strong> You can disable cloud sync at any time by signing out.</li>
-        <li><strong>Photo backup:</strong> Cloud photo backup is off by default and can be toggled in settings.</li>
-    </ul>
+        <hr>
 
-    <hr>
+        <h2>7. Children's Privacy</h2>
+        <p>SpotterHQ is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us so we can delete it.</p>
 
-    <h2>7. Children's Privacy</h2>
-    <p>SpotterHQ is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us so we can delete it.</p>
+        <hr>
 
-    <hr>
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. Changes will be posted within the app or at our website. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Changes will be posted within the app or at our website. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+        <hr>
 
-    <hr>
-
-    <h2>9. Contact Us</h2>
-    <p>If you have questions about this privacy policy or your data, contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:contact@spotterhq.app">contact@spotterhq.app</a></p>
-    
+        <h2>9. Contact Us</h2>
+        <p>If you have questions about this privacy policy or your data, contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:contact@spotterhq.app">contact@spotterhq.app</a></p>
+    </div>
 </body>
 </html>
