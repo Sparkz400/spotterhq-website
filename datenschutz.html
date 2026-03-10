@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung | SpotterHQ</title>
+    <meta name="description" content="Datenschutzerklärung von SpotterHQ — Ihre Daten gehören Ihnen.">
+    <meta name="theme-color" content="#0a0f1e">
+    <style>
+        :root {
+            --bg: #0a0f1e;
+            --bg-card: rgba(255,255,255,0.03);
+            --border: rgba(255,255,255,0.06);
+            --text: #e2e8f0;
+            --text-muted: #94a3b8;
+            --text-heading: #f8fafc;
+            --cyan: #38bdf8;
+            --green: #22c55e;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--cyan);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 2.5rem;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        .back-link:hover { opacity: 0.8; }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: var(--text-heading);
+            margin-bottom: 0.5rem;
+        }
+        .last-updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+        .intro {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .contact-line {
+            margin-bottom: 2rem;
+        }
+        .contact-line a { color: var(--cyan); }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2.5rem 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-heading);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-heading);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        ul {
+            padding-left: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+        li {
+            margin-bottom: 0.6rem;
+            color: var(--text);
+        }
+        li strong { color: var(--text-heading); }
+
+        p { margin-bottom: 1rem; }
+
+        a { color: var(--cyan); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 2rem;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.85rem 1rem;
+            text-align: left;
+        }
+        th {
+            background: var(--bg-card);
+            color: var(--text-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        td { color: var(--text); }
+        td a { word-break: break-all; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.75rem; }
+            table { font-size: 0.82rem; }
+            th, td { padding: 0.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+        <h1>Datenschutzerklärung</h1>
+        <p class="last-updated"><strong>Stand:</strong> 10. März 2026</p>
+        <p class="intro">SpotterHQ („wir", „uns" oder „die App") ist eine Anwendung für militärische Luftfahrt-Spotting. Diese Datenschutzerklärung erläutert, wie wir Ihre Daten erheben, verwenden und schützen.</p>
+        <p class="contact-line"><strong>Kontakt:</strong> <a href="mailto:devstudiosns@gmail.com">devstudiosns@gmail.com</a></p>
+
+        <hr>
+
+        <h2>1. Verantwortlicher</h2>
+        <p>
+            Nico Schuermann<br>
+            Melle, Niedersachsen<br>
+            Deutschland<br>
+            E-Mail: <a href="mailto:devstudiosns@gmail.com">devstudiosns@gmail.com</a>
+        </p>
+
+        <hr>
+
+        <h2>2. Welche Daten wir erheben</h2>
+
+        <h3>Von Ihnen bereitgestellte Daten</h3>
+        <ul>
+            <li><strong>Kontoinformationen:</strong> Wenn Sie ein Konto erstellen, erheben wir Ihre E-Mail-Adresse und Ihr Passwort (sicher gespeichert über Supabase Authentication).</li>
+            <li><strong>Spotting-Einträge:</strong> Flugzeugbeobachtungen, Fotos, Notizen und Standortdaten, die Sie erfassen.</li>
+            <li><strong>Ausrüstungsprofile:</strong> Kamera- und Objektivkonfigurationen, die Sie speichern.</li>
+        </ul>
+
+        <h3>Automatisch erhobene Daten</h3>
+        <ul>
+            <li><strong>Gerätestandort:</strong> Mit Ihrer Erlaubnis greifen wir auf Ihren GPS-Standort zu, um Flugzeuge in der Nähe anzuzeigen. Standortdaten werden auf dem Gerät verarbeitet und nicht an Dritte weitergegeben.</li>
+            <li><strong>Kamerazugriff:</strong> Mit Ihrer Erlaubnis greifen wir auf die Kamera für die AR-Ansicht zu. Kameradaten werden nicht aufgezeichnet oder übertragen, außer wenn Sie Fotos explizit speichern.</li>
+        </ul>
+
+        <h3>Werbung (Google AdMob)</h3>
+        <ul>
+            <li>Die kostenlose Version der App zeigt nicht-aufdringliche Werbeanzeigen über Google AdMob an.</li>
+            <li>AdMob kann Gerätekennungen und Nutzungsdaten zur Anzeigenpersonalisierung erheben. Details finden Sie in der <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Datenschutzerklärung von Google</a>.</li>
+            <li>Sie können personalisierte Werbung in Ihren Geräteeinstellungen deaktivieren.</li>
+            <li>Mit einem Premium-Abonnement werden alle Werbeanzeigen entfernt.</li>
+        </ul>
+
+        <h3>Daten, die wir NICHT erheben</h3>
+        <ul>
+            <li>Wir erheben keine Analysen, Absturzberichte oder Nutzungstelemetrie.</li>
+            <li>Wir verfolgen Sie nicht über andere Apps oder Websites.</li>
+        </ul>
+
+        <hr>
+
+        <h2>3. Rechtsgrundlagen der Verarbeitung</h2>
+        <p>Die Verarbeitung Ihrer Daten erfolgt auf Basis folgender Rechtsgrundlagen gemäß DSGVO:</p>
+        <ul>
+            <li><strong>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung):</strong> Standortzugriff, Kamerazugriff, optionale Cloud-Synchronisation.</li>
+            <li><strong>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung):</strong> Bereitstellung der App-Funktionalität, Kontoerstellung und -verwaltung.</li>
+            <li><strong>Art. 6 Abs. 1 lit. f DSGVO (Berechtigtes Interesse):</strong> Anzeige von Werbung zur Finanzierung der kostenlosen App-Version.</li>
+        </ul>
+
+        <hr>
+
+        <h2>4. Verwendung Ihrer Daten</h2>
+        <ul>
+            <li><strong>Flugzeuge in der Nähe anzeigen:</strong> Ihr Standort wird an api.adsb.lol gesendet, um Flugzeuge in Ihrem konfigurierten Radius abzurufen.</li>
+            <li><strong>Cloud-Synchronisation</strong> (optional): Bei Kontoerstellung werden Ihre Spotting-Einträge, Standorte und Einstellungen mit unserem Supabase-Backend synchronisiert.</li>
+            <li><strong>Foto-Backup</strong> (optional, standardmäßig deaktiviert): Bei Aktivierung werden Ihre Fotos in einen sicheren Cloud-Speicher hochgeladen.</li>
+            <li><strong>Authentifizierung:</strong> Ihre E-Mail wird ausschließlich für den Kontozugang und die Passwortwiederherstellung verwendet.</li>
+            <li><strong>Werbung:</strong> Google AdMob zeigt Anzeigen in der kostenlosen Version an.</li>
+            <li><strong>In-App-Käufe:</strong> Abonnementdaten werden über Google Play verarbeitet.</li>
+        </ul>
+
+        <hr>
+
+        <h2>5. Datenspeicherung und Sicherheit</h2>
+        <ul>
+            <li><strong>Lokal zuerst:</strong> Alle Daten werden lokal auf Ihrem Gerät in einer SQLite-Datenbank gespeichert. Die App funktioniert vollständig offline.</li>
+            <li><strong>Cloud-Sync ist optional:</strong> Sie können die App ohne Konto nutzen. Keine Daten verlassen Ihr Gerät, sofern Sie nicht zustimmen.</li>
+            <li><strong>Sensible Daten ausgeschlossen:</strong> API-Schlüssel, Passwörter und Privatzone-Koordinaten werden niemals in die Cloud synchronisiert.</li>
+            <li><strong>Privatzone:</strong> Sie können eine Privatzone um Ihren Standort konfigurieren. Koordinaten innerhalb dieser Zone werden in CSV-Exporten durch „PRIVATE" ersetzt.</li>
+            <li><strong>Verschlüsselung:</strong> Jegliche Netzwerkkommunikation erfolgt über HTTPS/TLS.</li>
+            <li><strong>Supabase-Sicherheit:</strong> Cloud-Daten sind durch Row Level Security (RLS) geschützt — Nutzer können nur auf eigene Daten zugreifen.</li>
+        </ul>
+
+        <hr>
+
+        <h2>6. Weitergabe an Dritte</h2>
+        <p>Wir verkaufen, vermieten oder teilen Ihre personenbezogenen Daten nicht zu Marketingzwecken.</p>
+        <p>Ihre Daten werden ausschließlich zur Bereitstellung der App-Funktionalität an folgende Dienste übermittelt:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dienst</th>
+                    <th>Zweck</th>
+                    <th>Datenschutz</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>api.adsb.lol</td>
+                    <td>Flugzeug-Tracking-Daten</td>
+                    <td><a href="https://adsb.lol/privacy/" target="_blank" rel="noopener">adsb.lol/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Supabase</td>
+                    <td>Authentifizierung &amp; Cloud-Sync</td>
+                    <td><a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a></td>
+                </tr>
+                <tr>
+                    <td>Google AdMob</td>
+                    <td>Werbeanzeigen</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Datenschutz</a></td>
+                </tr>
+                <tr>
+                    <td>Google Play</td>
+                    <td>In-App-Käufe &amp; Abonnements</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Datenschutz</a></td>
+                </tr>
+                <tr>
+                    <td>Open Glider Network</td>
+                    <td>Segelflugzeug-Tracking</td>
+                    <td><a href="https://www.glidernet.org" target="_blank" rel="noopener">glidernet.org</a></td>
+                </tr>
+                <tr>
+                    <td>CelesTrak</td>
+                    <td>Satelliten-TLE-Daten</td>
+                    <td><a href="https://celestrak.org" target="_blank" rel="noopener">celestrak.org</a></td>
+                </tr>
+                <tr>
+                    <td>OpenStreetMap</td>
+                    <td>Kartenkacheln</td>
+                    <td><a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OSM Datenschutz</a></td>
+                </tr>
+                <tr>
+                    <td>aviationweather.gov</td>
+                    <td>METAR-Wetterdaten</td>
+                    <td><a href="https://aviationweather.gov" target="_blank" rel="noopener">aviationweather.gov</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h2>7. Ihre Rechte (DSGVO)</h2>
+        <p>Sie haben gemäß DSGVO folgende Rechte:</p>
+        <ul>
+            <li><strong>Auskunftsrecht (Art. 15):</strong> Sie können Auskunft über Ihre gespeicherten Daten verlangen.</li>
+            <li><strong>Berichtigung (Art. 16):</strong> Sie können die Berichtigung unrichtiger Daten verlangen.</li>
+            <li><strong>Löschung (Art. 17):</strong> Sie können die Löschung Ihrer Daten verlangen.</li>
+            <li><strong>Einschränkung (Art. 18):</strong> Sie können die Einschränkung der Verarbeitung verlangen.</li>
+            <li><strong>Datenübertragbarkeit (Art. 20):</strong> Sie können Ihre Daten als CSV-Datei aus der App exportieren.</li>
+            <li><strong>Widerspruch (Art. 21):</strong> Sie können der Verarbeitung Ihrer Daten widersprechen.</li>
+            <li><strong>Widerruf der Einwilligung:</strong> Erteilte Einwilligungen können jederzeit widerrufen werden (z.B. Standortzugriff in den Geräteeinstellungen).</li>
+        </ul>
+        <p>Sie haben außerdem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig ist die Landesbeauftragte für den Datenschutz Niedersachsen.</p>
+
+        <hr>
+
+        <h2>8. Praktische Kontrolle</h2>
+        <ul>
+            <li><strong>Standortberechtigung:</strong> Jederzeit in den Geräteeinstellungen widerrufbar.</li>
+            <li><strong>Kontolöschung:</strong> Konto und alle Cloud-Daten löschen über <a href="mailto:devstudiosns@gmail.com">devstudiosns@gmail.com</a> oder direkt in der App.</li>
+            <li><strong>Lokale Daten:</strong> Deinstallation der App entfernt alle lokal gespeicherten Daten.</li>
+            <li><strong>Datenexport:</strong> Spotting-Einträge als CSV-Datei aus der App exportierbar.</li>
+            <li><strong>Cloud-Sync:</strong> Jederzeit durch Abmeldung deaktivierbar.</li>
+            <li><strong>Foto-Backup:</strong> Standardmäßig deaktiviert, in den Einstellungen umschaltbar.</li>
+            <li><strong>Personalisierte Werbung:</strong> In den Geräteeinstellungen deaktivierbar.</li>
+        </ul>
+
+        <hr>
+
+        <h2>9. Kinder</h2>
+        <p>SpotterHQ richtet sich nicht an Kinder unter 16 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 16 Jahren. Wenn Sie glauben, dass ein Kind uns personenbezogene Daten übermittelt hat, kontaktieren Sie uns bitte.</p>
+
+        <hr>
+
+        <h2>10. Änderungen</h2>
+        <p>Wir können diese Datenschutzerklärung gelegentlich aktualisieren. Änderungen werden in der App oder auf unserer Website veröffentlicht.</p>
+
+        <hr>
+
+        <h2>11. Kontakt</h2>
+        <p>Bei Fragen zum Datenschutz kontaktieren Sie uns unter:</p>
+        <p><strong>E-Mail:</strong> <a href="mailto:devstudiosns@gmail.com">devstudiosns@gmail.com</a></p>
+    </div>
+</body>
+</html>
