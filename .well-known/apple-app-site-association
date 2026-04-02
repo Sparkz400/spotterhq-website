@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "ARWH2XA55G.app.spotterhq",
+        "paths": [
+          "/aircraft/*",
+          "/crew/*",
+          "/spot/*",
+          "/challenge/*",
+          "/location/*"
+        ]
+      }
+    ]
+  }
+}

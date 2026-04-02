@@ -234,6 +234,14 @@
             border: 1px solid var(--border);
         }
         .btn-secondary:hover { border-color: var(--border-hover); color: var(--text); }
+        .btn-disabled,
+        .btn-disabled:hover {
+            opacity: 0.55;
+            cursor: default;
+            transform: none;
+            box-shadow: none;
+            text-decoration: none;
+        }
 
         /* ===== Trust Bar ===== */
         .trust-bar {
@@ -636,8 +644,8 @@
         <p class="hero-tagline">The Ultimate Military Aviation Spotting App</p>
         <p class="hero-desc">Track aircraft in real-time, log your spots with photos, compete with other spotters, and analyze your performance &mdash; all in one privacy-first app that works completely offline.</p>
         <div class="hero-ctas">
-            <a href="#app-store-link" class="btn btn-primary">&#63743; App Store</a>
-            <a href="#google-play-link" class="btn btn-secondary">&#9654; Google Play</a>
+            <a href="#" class="btn btn-primary btn-disabled" aria-disabled="true" data-ios-store-button>&#63743; App Store Soon</a>
+            <a href="https://play.google.com/store/apps/details?id=app.spotterhq" class="btn btn-secondary">&#9654; Google Play</a>
         </div>
     </div>
 </section>
@@ -884,8 +892,8 @@
         <h2 class="reveal">Start Spotting Today</h2>
         <p class="reveal">Free to download. No account required. Go ad-free with Premium.</p>
         <div class="cta-buttons reveal">
-            <a href="#app-store-link" class="btn btn-primary">&#63743; Download on App Store</a>
-            <a href="#google-play-link" class="btn btn-secondary">&#9654; Get it on Google Play</a>
+            <a href="#" class="btn btn-primary btn-disabled" aria-disabled="true" data-ios-store-button>&#63743; App Store Soon</a>
+            <a href="https://play.google.com/store/apps/details?id=app.spotterhq" class="btn btn-secondary">&#9654; Get it on Google Play</a>
         </div>
     </div>
 </section>
@@ -939,6 +947,19 @@
     }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    const iosStoreUrl = 'https://apps.apple.com/app/spotterhq';
+    const hasRealIosStoreUrl = /^https:\/\/apps\.apple\.com\/app\/id\d+/.test(iosStoreUrl);
+    document.querySelectorAll('[data-ios-store-button]').forEach((button) => {
+        if (hasRealIosStoreUrl) {
+            button.href = iosStoreUrl;
+            button.classList.remove('btn-disabled');
+            button.removeAttribute('aria-disabled');
+            button.textContent = button.textContent.replace(' Soon', '');
+        } else {
+            button.addEventListener('click', (event) => event.preventDefault());
+        }
+    });
 
     // Contact form submission
     const contactForm = document.getElementById('contactForm');
