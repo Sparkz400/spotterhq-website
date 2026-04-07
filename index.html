@@ -1000,11 +1000,23 @@
                 contactForm.reset();
                 if (window.turnstile) window.turnstile.reset();
             } else {
-                throw new Error('Server error');
+                let errorMessage = 'Something went wrong. Please try again or email contact@spotterhq.app.';
+                try {
+                    const errorData = await res.json();
+                    if (errorData?.error === 'Bot verification failed') {
+                        errorMessage = 'Security check failed. Please complete it again and retry.';
+                    } else if (errorData?.error === 'Failed to send message') {
+                        errorMessage = 'Message could not be sent right now. Please try again in a moment or email contact@spotterhq.app.';
+                    }
+                } catch {}
+                throw new Error(errorMessage);
             }
-        } catch {
+        } catch (error) {
             formStatus.className = 'form-status error';
-            formStatus.textContent = 'Something went wrong. Please try again or email contact@spotterhq.app.';
+            formStatus.textContent = error instanceof Error
+                ? error.message
+                : 'Something went wrong. Please try again or email contact@spotterhq.app.';
+            if (window.turnstile) window.turnstile.reset();
         } finally {
             formSubmit.disabled = false;
             formSubmit.textContent = 'Send Message';
