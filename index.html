@@ -989,7 +989,7 @@
         formStatus.className = 'form-status';
 
         try {
-            const res = await fetch('https://spotterhq-contact.spotterhq.workers.dev/contact', {
+            const res = await fetch('https://contact.spotterhq.app/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, message, token }),
