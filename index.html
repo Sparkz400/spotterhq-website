@@ -989,11 +989,31 @@
         formStatus.className = 'form-status';
 
         try {
-            const res = await fetch('https://contact.spotterhq.app/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email, message, token }),
-            });
+            const contactEndpoints = [
+                'https://contact.spotterhq.app/contact',
+                'https://spotterhq-contact.nicoschuermann01.workers.dev/contact',
+            ];
+
+            let res;
+            let lastError;
+
+            for (const endpoint of contactEndpoints) {
+                try {
+                    res = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name, email, message, token }),
+                    });
+                    break;
+                } catch (error) {
+                    lastError = error;
+                }
+            }
+
+            if (!res) {
+                throw lastError || new Error('Network error');
+            }
+
             if (res.ok) {
                 formStatus.className = 'form-status success';
                 formStatus.textContent = 'Message sent! We\'ll get back to you soon.';
